@@ -1,5 +1,4 @@
 def skip_elements(elements):
-	# code goes here
 	new_list = []
 	for index,element in enumerate(elements):
 		if index % 2 ==0:
