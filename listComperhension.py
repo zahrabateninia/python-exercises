@@ -10,6 +10,5 @@ def create_squred_nums2(start,end):
     for num in range(start,end+1):
         squered_num = num**2
         list_of_squered_nums.append(squered_num)
-       
     return list_of_squered_nums
 print(create_squred_nums2(2,3))
