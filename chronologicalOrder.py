@@ -2,6 +2,8 @@
 def record_profit_years(recent_first, recent_last):
     recent_first.reverse()
     recent_last.extend(recent_first)
+    
+    
 
     return recent_last
 
