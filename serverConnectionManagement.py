@@ -13,13 +13,13 @@ class Server:
         """Adds a new connection to this server."""
         connection_load = random.random()*10+1  #also can use random.randint(1,10) 
         self.connections[connection_id] = connection_load
-        
+        self.ensure_availability()
 
     def close_connection(self, connection_id):
         """Closes a connection on this server."""
         if connection_id in self.connections:
             del self.connections[connection_id]
-        
+        self.ensure_availability()
 
     def load(self):
         """Calculates the current load for all connections."""
@@ -44,7 +44,7 @@ class LoadBalancing:
     def __init__(self):
         """Initialize the load balancing system with one server"""
         self.connections = {}
-        self.servers = [Server()]
+        self.servers = [Server()] #
 
     def add_connection(self, connection_id):
         """Randomly selects a server and adds a connection to it."""
