@@ -20,5 +20,6 @@ print(f"Exact negation of n1: 0{negation_of_n1}")
 
 # Shifts
 number = 20
+print(f"number is {bin(number)}")
 number <<=1
-print(number)
+print(f"Shifted number is {bin(number)}")
