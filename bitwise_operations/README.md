@@ -12,5 +12,6 @@ This Python script demonstrates various bitwise operations on two integers, `n1`
 
 ```bash
 python bitwise_operations.py
+```
 
 for more explanation you can watch this [YouTube](https://youtu.be/i1wQOiljBvY?si=g08AKCWwbsI0T29Q) video.
